@@ -8,10 +8,8 @@
 
 int main() {
 
-    std::cout << recurParidad(2) << std::endl;
-    std::cout << recurParidad(3) << std::endl;
-    std::cout << recurParidad(4) << std::endl;
-    std::cout << recurParidad(5) << std::endl;
+    std::cout << iterMCD(656, 848) << std::endl;
+    std::cout << recurMCD(1728, 842) << std::endl;
 
     return 0;
 }

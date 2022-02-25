@@ -1,5 +1,3 @@
-#include <iostream>
-
 #ifndef PARIDAD_H_
 #define PARIDAD_H_
 
