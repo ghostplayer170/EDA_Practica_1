@@ -1,4 +1,13 @@
-#ifndef MCD_H
-#define MCD_H
+#ifndef MCD_H_
 
-#endif // MCD_H
+#define MCD_H_
+
+int iterMCD(int a, int b) {
+    if (a > b) {
+
+    } else {
+
+    }
+}
+
+#endif  // MCD_H_
