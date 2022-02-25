@@ -10,5 +10,5 @@ HEADERS += \
     invertir.h \
     mcd.h \
     paridad.h \
-    vectoresIguales.h \
-    vectores_equivalentes.h
+    vectoresEquivalentes.h \
+    vectoresIguales.h
