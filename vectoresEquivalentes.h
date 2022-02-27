@@ -74,6 +74,9 @@ bool vec_equivalentes_PRUEBA_2 (std::vector<int> const& vecA, std::vector<int> c
     std::vector<std::vector<int>::iterator> iteradoresA;
     std::vector<std::vector<int>::iterator> iteradoresB;
 
+    if (vecA_copia.size()!=vecB_copia.size())
+        return false;
+
     do {
         iteradoresA.push_back(vecA_copia.begin());
         for (auto i = vecA_copia.begin() + 1; i < vecA_copia.end(); ++i) {
@@ -98,7 +101,10 @@ bool vec_equivalentes_PRUEBA_2 (std::vector<int> const& vecA, std::vector<int> c
         iteradoresA.clear();
         iteradoresB.clear();
 
-    } while (not iteradoresA.empty() and not iteradoresB.empty());
+        if(vecA_copia.empty() and vecB_copia.empty())
+            return true;
+
+    } while ((iteradoresA.size() != iteradoresA.empty()) and (iteradoresB.size() != iteradoresB.empty()));
 
     return true;
 }
